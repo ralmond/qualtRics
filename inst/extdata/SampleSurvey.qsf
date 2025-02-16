@@ -1,0 +1,2614 @@
+{
+  "SurveyEntry": {
+    "SurveyID": "SV_000000000000",
+    "SurveyName": "WMU Faculty Survey",
+    "SurveyDescription": null,
+    "SurveyOwnerID": "URH_0000000000000",
+    "SurveyBrandID": "wmu",
+    "DivisionID": null,
+    "SurveyLanguage": "EN",
+    "SurveyActiveResponseSet": "RS_0000000000",
+    "SurveyStatus": "Active",
+    "SurveyStartDate": "0000-00-00 00:00:00",
+    "SurveyExpirationDate": "0000-00-00 00:00:00",
+    "SurveyCreationDate": "2024-11-12 12:42:25",
+    "CreatorID": "URH_0000000000000",
+    "LastModified": "2025-01-28 12:44:45",
+    "LastAccessed": "0000-00-00 00:00:00",
+    "LastActivated": "2024-11-14 20:04:47",
+    "Deleted": null
+  },
+  "SurveyElements": [
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "FL",
+      "PrimaryAttribute": "Survey Flow",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Root",
+        "FlowID": "FL_1",
+        "Flow": [
+          {
+            "Type": "Standard",
+            "ID": "BL_0000000001",
+            "FlowID": "FL_9",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_0000000000002",
+            "FlowID": "FL_3",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_000000000003",
+            "FlowID": "FL_4",
+            "Autofill": []
+          },
+          {
+            "Type": "Branch",
+            "FlowID": "FL_18",
+            "Description": "New Branch",
+            "BranchLogic": {
+              "0": {
+                "0": {
+                  "LogicType": "Question",
+                  "QuestionID": "QID2",
+                  "QuestionIsInLoop": "no",
+                  "ChoiceLocator": "q://QID2/SelectableChoice/1",
+                  "Operator": "Selected",
+                  "QuestionIDFromLocator": "QID2",
+                  "LeftOperand": "q://QID2/SelectableChoice/1",
+                  "Type": "Expression",
+                  "Description": "<span class=\"ConjDesc\">If</span> <span class=\"QuestionDesc\">How often do you engage in WMU outreach activities?</span> <span class=\"LeftOpDesc\">I don’t engage in outreach</span> <span class=\"OpDesc\">Is Selected</span> "
+                },
+                "Type": "If"
+              },
+              "Type": "BooleanExpression"
+            },
+            "Flow": [
+              {
+                "Type": "Block",
+                "ID": "BL_0000000000004",
+                "FlowID": "FL_19",
+                "Autofill": []
+              },
+              {
+                "Type": "Block",
+                "ID": "BL_0000000000005",
+                "FlowID": "FL_22",
+                "Autofill": []
+              },
+              {
+                "Type": "Block",
+                "ID": "BL_000000000007",
+                "FlowID": "FL_23",
+                "Autofill": []
+              },
+              {
+                "Type": "EndSurvey",
+                "FlowID": "FL_21"
+              }
+            ]
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_00000000008",
+            "FlowID": "FL_20",
+            "Autofill": []
+          },
+          {
+            "Type": "Block",
+            "ID": "BL_0000000009",
+            "FlowID": "FL_5",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_00000000000000a",
+            "FlowID": "FL_6",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_0000000000005",
+            "FlowID": "FL_7",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_000000000007",
+            "FlowID": "FL_8",
+            "Autofill": []
+          }
+        ],
+        "Properties": {
+          "Count": 23
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "STAT",
+      "PrimaryAttribute": "Survey Statistics",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "MobileCompatible": true,
+        "ID": "Survey Statistics"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SO",
+      "PrimaryAttribute": "Survey Options",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "BackButton": "false",
+        "SaveAndContinue": "true",
+        "SurveyProtection": "PublicSurvey",
+        "BallotBoxStuffingPrevention": "false",
+        "NoIndex": "Yes",
+        "SecureResponseFiles": "true",
+        "SurveyExpiration": "None",
+        "SurveyTermination": "DefaultMessage",
+        "Header": "",
+        "Footer": "",
+        "ProgressBarDisplay": "NoText",
+        "PartialData": "+1 week",
+        "ValidationMessage": null,
+        "PreviousButton": "",
+        "NextButton": " → ",
+        "SurveyTitle": "WMU Faculty Survey",
+        "SkinLibrary": "wmu",
+        "SkinType": "templated",
+        "Skin": {
+          "brandingId": "1234567890",
+          "templateId": "*base",
+          "overrides": null
+        },
+        "NewScoring": 1,
+        "SurveyMetaDescription": "The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today.",
+        "SurveyName": "WMU Faculty Survey",
+        "EOSMessage": null,
+        "ShowExportTags": "false",
+        "CollectGeoLocation": "false",
+        "PasswordProtection": "No",
+        "AnonymizeResponse": "No",
+        "RefererCheck": "No",
+        "RecaptchaV3": "false",
+        "ConfirmStart": false,
+        "AutoConfirmStart": false,
+        "RelevantID": "false",
+        "RelevantIDLockoutPeriod": "+30 days",
+        "UseCustomSurveyLinkCompletedMessage": null,
+        "SurveyLinkCompletedMessage": null,
+        "SurveyLinkCompletedMessageLibrary": null,
+        "ResponseSummary": "No",
+        "EOSMessageLibrary": null,
+        "EOSRedirectURL": null,
+        "EmailThankYou": "false",
+        "ThankYouEmailMessageLibrary": null,
+        "ThankYouEmailMessage": null,
+        "ValidateMessage": "false",
+        "ValidationMessageLibrary": null,
+        "InactiveSurvey": null,
+        "PartialDeletion": null,
+        "PartialDataCloseAfter": "LastActivity",
+        "InactiveMessageLibrary": null,
+        "InactiveMessage": null,
+        "AvailableLanguages": {
+          "EN": []
+        },
+        "CustomStyles": [],
+        "ProtectSelectionIds": true
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SCO",
+      "PrimaryAttribute": "Scoring",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ScoringCategories": [],
+        "ScoringCategoryGroups": [],
+        "ScoringSummaryCategory": null,
+        "ScoringSummaryAfterQuestions": 0,
+        "ScoringSummaryAfterSurvey": 0,
+        "DefaultScoringCategory": null,
+        "AutoScoringCategory": null
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "RS",
+      "PrimaryAttribute": "RS_0000000000",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "QGO",
+      "PrimaryAttribute": "QGO_QuotaGroupOrder",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": [
+        "QG_6PBNNkIBmPbl9iM"
+      ]
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "PROJ",
+      "PrimaryAttribute": "CORE",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": "1.1.0",
+      "Payload": {
+        "ProjectCategory": "CORE",
+        "SchemaVersion": "1.1.0"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "PL",
+      "PrimaryAttribute": "Preview Link",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "PreviewType": "Brand",
+        "PreviewID": "00000000-0000-0000-0000-000000"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "NT",
+      "PrimaryAttribute": "NT_0000000000001",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Notes": [
+          {
+            "Message": "Question really to get at where they get ideas for outreach activities. Could also ask about awareness of WMU activities.",
+            "ID": "NO_000000000001",
+            "UserID": "URH_0000000000000",
+            "Timestamp": 1725993753,
+            "Removed": false
+          }
+        ],
+        "UserStatuses": {
+          "URH_0000000000000": "Expanded"
+        },
+        "ParentID": "QID14",
+        "ID": "NT_0000000000001"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "NT",
+      "PrimaryAttribute": "NO_000000000000002",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Notes": [
+          {
+            "Message": "Adjust branching -- only people who participate through WMU get next questions",
+            "ID": "NO_0000000003",
+            "UserID": "URH_0000000000000",
+            "Timestamp": 1726497305,
+            "Removed": false
+          },
+          {
+            "Message": "I do not participate in WMU outreach activities can be deleted",
+            "ID": "NO_0000000000004",
+            "UserID": "UR_00000000002",
+            "Timestamp": 1731645182,
+            "Removed": false
+          }
+        ],
+        "UserStatuses": {
+          "URH_0000000000000": "Expanded",
+          "UR_00000000002": "Expanded"
+        },
+        "ParentID": "QID32",
+        "ID": "NO_000000000000002"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "BL",
+      "PrimaryAttribute": "Survey Blocks",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "0": {
+          "Type": "Default",
+          "Description": "Outreach and Job Duties",
+          "ID": "BL_0000000009",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID34"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID42"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID33"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID41"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID7"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        "1": {
+          "Type": "Trash",
+          "Description": "Trash / Unused Questions",
+          "ID": "BL_egs1sYfjXfaHJcy",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID43"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID1718756050"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID6"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID15"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID14"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID46"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID32"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID16"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID49"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID50"
+            }
+          ]
+        },
+        "2": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Open Items (SWOT)",
+          "ID": "BL_000000000007",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID35"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID36"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID37"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID38"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID17"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        "4": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Participation in Outreach",
+          "ID": "BL_000000000003",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID3"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID2"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        "5": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Demographics",
+          "ID": "BL_0000000000002",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID39"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID40"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        "6": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Outreach and Values",
+          "ID": "BL_0000000000005",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID9"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID11"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID12"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        "7": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Outreach and Support",
+          "ID": "BL_00000000000000a",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID8"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID10"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID13"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        "9": {
+          "Type": "Standard",
+          "Description": "Information Sheet",
+          "ID": "BL_0000000001",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID1718756051"
+            }
+          ],
+          "Options": {
+            "BlockLocking": false,
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        "10": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Reasons NOT engage",
+          "ID": "BL_0000000000004",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID47"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        "11": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Participation Roles",
+          "ID": "BL_00000000008",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID48"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "QC",
+      "PrimaryAttribute": "Survey Question Count",
+      "SecondaryAttribute": "50",
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID41",
+      "SecondaryAttribute": "Are there any comments or feedback you would like to share about your AOR and participation in FS...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Are there any comments or feedback you would like to share about your AOR and participation in WMU outreach activities? If so, please comment here.",
+        "DefaultChoices": false,
+        "DataExportTag": "Q24",
+        "QuestionID": "QID41",
+        "QuestionType": "TE",
+        "Selector": "ML",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Are there any comments or feedback you would like to share about your AOR and participation in FS...",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID49",
+      "SecondaryAttribute": "Click to write the question text",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Click to write the question text",
+        "DataExportTag": "Q32",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Click to write the question text",
+        "Choices": {
+          "1": {
+            "Display": "Click to write Choice 1"
+          },
+          "2": {
+            "Display": "Click to write Choice 2"
+          },
+          "3": {
+            "Display": "Click to write Choice 3"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID49"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID43",
+      "SecondaryAttribute": "Click to write the question text",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Click to write the question text",
+        "DefaultChoices": false,
+        "DataExportTag": "Q26",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Click to write the question text",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID43"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "QG",
+      "PrimaryAttribute": "QG_00000000001",
+      "SecondaryAttribute": "Default Quota Group",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ID": "QG_00000000001",
+        "Name": "Default Quota Group",
+        "Selected": true,
+        "MultipleMatch": "PlaceInAll",
+        "Public": false,
+        "Quotas": []
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID40",
+      "SecondaryAttribute": "Do you consider yourself to be part of an underrepresented group in your profession?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Do you consider yourself to be part of an underrepresented group in your profession?",
+        "DataExportTag": "Q25",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Do you consider yourself to be part of an underrepresented group in your profession?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          },
+          "3": {
+            "Display": "Prefer to not answer"
+          },
+          "4": {
+            "Display": "Others (please specify)",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID40"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID3",
+      "SecondaryAttribute": "Does your unit at WMU conduct regularly scheduled outreach activities?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12.0pt\"><span style=\"line-height:116%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">Does your unit at WMU conduct regularly scheduled outreach activities?</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q2",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "Autoscale": {
+            "YScale": {
+              "Name": "yesNo",
+              "Type": "likert",
+              "Reverse": true
+            }
+          }
+        },
+        "QuestionDescription": "Does your unit at WMU conduct regularly scheduled outreach activities?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID3"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID1718756051",
+      "SecondaryAttribute": "WOSSAMOTTA UNIVERSITY OFFICE of the VICE PRESIDENT for RESEARCH   INFORMATION SHEET STUDY TITL..",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<h3 style=\"text-align: center;\">WOSSAMOTTA UNIVERSITY OFFICE of the VICE PRESIDENT for RESEARCH</h3>\n\n<center><br>\n&nbsp;</center>\n\n<h3 style=\"text-align: center;\">INFORMATION SHEET</h3>\n\n<h3 style=\"text-align: center;\">STUDY TITLE:&nbsp;WMU CHOOSE: Collaborative Hub for Outreach and Opportunities in STEM Education</h3><div><br></div>\n\n<p>You are being asked to voluntarily participate in a research study. We are doing this study to find out how Wossamotta University can best meet community needs through outreach efforts. You are invited to take part in the study because you are a faculty member at WMU.</p>\n\n<p>&nbsp;</p>\n\n<p>If you choose to participate, your participation will consist of completing a 15-minute online survey.</p>\n\n<p>&nbsp;</p>\n\n<p>This research is being funded by a Wossamotta University Office of Research Collaborative Collision Grant.</p>\n\n<p>We will not record your name or other identifiers. We will securely store your information. We will collect, transmit, store and access electronic files in computer systems with password, encryption and other authentication protection. However, we cannot guarantee complete confidentiality.</p>\n\n<p>&nbsp;</p>\n\n<p>If you have any questions, please contact Rocket J Squirrel, rocky@wmu.edu.</p>\n\n<p>&nbsp;</p>\n\n<p>If you have any questions or concerns about your rights as a research participant, or regarding the study and would like to talk to someone other than the researcher(s), you are encouraged to contact the WMU Office for Human Subjects Protection (OHSP) at (555) 000-0000.</p>\n\n<p>&nbsp;</p>\n\n<p>You may also contact the OHSP by email at humansubjects@wmu.edu, or by writing OHSP at 111 First Avenue, Research Foundation Building A,, Nowhere, WU 00000-0000.</p>",
+        "DefaultChoices": false,
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "WOSSAMOTTA UNIVERSITY OFFICE of the VICE PRESIDENT for RESEARCH   INFORMATION SHEET STUDY TITL...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "QuestionText_Unsafe": "<div style=\"text-align: center;\"><span style=\"font-size:16px;\">WOSSAMOTTA UNIVERSITY OFFICE of the VICE PRESIDENT for RESEARCH<br>\n<br>\n&nbsp;<br>\n<br>\nINFORMATION SHEET</span></div>\n<span style=\"font-size:16px;\">&nbsp;<br>\n<b><i>STUDY TITLE (STUDY00003837): College Students’ Perspectives of Taking Online Courses</i></b><br>\n&nbsp;<br>\nYou are being asked to voluntarily participate in a research study. We are doing this study to learn about how college students take online courses.<br>\n<br>\nIf you choose to participate, you will be asked to complete an online survey about your online learning experiences.<br>\n<br>\nThis survey will take around 15 minutes. We will not record your name or any information that shows your identity. You will not be signing this form.<br>\n<br>\nIf you have any questions, please contact Bullwinkle J. Moose, bullwinkle@wmu.edu.<br>\n<br>\nIf you have any questions or concerns about your rights as a research participant, or regarding the study and would like to talk to someone other than the researcher(s), you are encouraged to contact the WMU Office for Human Subjects Protection (OHSP) at (555) 000-0000. You may also contact the OHSP by email at humansubjects@wmu.edu.<br>\n<br>\nClick the arrow if you wish to begin the survey.</span>",
+        "DataExportTag": "Q1",
+        "QuestionID": "QID1718756051"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID1718756050",
+      "SecondaryAttribute": "WOSSAMOTTA UNIVERSITY OFFICE of the VICE PRESIDENT for  RESEARCHINFORMATION SHEET   STUDY TITL",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<div style=\"text-align: center;\"><strong>WOSSAMOTTA UNIVERSITY<br />\nOFFICE of the VICE PRESIDENT for&nbsp;&nbsp;RESEARCH</strong><br />\n<\n<strong>INFORMATION SHEET </strong>&nbsp;</div>\n\n<p><em><strong>STUDY TITLE: Teenage Social Media Use in the Time of COVID-19</strong></em></p>\n\n<p>You are being asked to voluntarily participate in a research study. We are doing this study to learn about how teenagers are using social media during the COVID-19 pandemic. If you choose to participate, you will be asked to complete an online survey about your social media use and school experience this year. This survey will take around 20 minutes.</p>\n\n<p>We will not record your name or any information that shows your identity. You will not be signing this form.</p>\n\n<p>For your participation, you will be eligible to enter a drawing for a $25 gift card. You will also be able to provide contact information at the end of the survey if you are interested in participating in further research in this area.</p>\n\n<p>If you have any questions, please contact Rocket J. Squirrell, rocky@wmu.edu, 555-000-0000 or Bullwinkle J. Moose, bullwinkle@wmu.edu, 555-000-0000.</p>\n\n<p>If you have any questions or concerns about your rights as a research participant, or regarding the study and would like to talk to someone other than the researcher(s), you are encouraged to contact the WMU Office for Human Subjects Protection (OHSP) at (555) 000-0000.</p>\n\n<p>You may also contact the OHSP by email at humansubjects@wmu.edu, or by writing OHSP at 111 First Avenue, Research Foundation Building A, Nowwhere, ?? 00000-0000.</p>\n\n<div id=\"gtx-trans\" style=\"position: absolute; left: 465px; top: 211.042px;\">\n<div class=\"gtx-trans-icon\">&nbsp;</div>\n</div>",
+        "DefaultChoices": false,
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "WOSSAMOTTA UNIVERSITY OFFICE of the VICE PRESIDENT for  RESEARCHINFORMATION SHEET   STUDY TITL...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "QuestionText_Unsafe": "<div style=\"text-align: center;\"><strong>WOSSAMOTTA UNIVERSITY<br />\nOFFICE of the VICE PRESIDENT for&nbsp;&nbsp;RESEARCH</strong><br />\n<br />\n<strong>INFORMATION SHEET </strong>&nbsp;</div>\n\n<p><em><strong>STUDY TITLE: Teenage Social Media Use in the Time of COVID-19</strong></em></p>\n\n<p>You are being asked to voluntarily participate in a research study. We are doing this study to learn about how teenagers are using social media during the COVID-19 pandemic. If you choose to participate, you will be asked to complete an online survey about your social media use and school experience this year. This survey will take around 20 minutes.</p>\n\n<p>We will not record your name or any information that shows your identity. You will not be signing this form.</p>\n\n<p>For your participation, you will be eligible to enter a drawing for a $25 gift card. You will also be able to provide contact information at the end of the survey if you are interested in participating in further research in this area.</p>\n\n<p>If you have any questions, please contact Rocket J. Squirrell, rocky@wmu.edu, 555-000-0000 or Bullwinkle J. Moose, moose@wmu.edu, 555-000-0000.</p>\n\n<p>If you have any questions or concerns about your rights as a research participant, or regarding the study and would like to talk to someone other than the researcher(s), you are encouraged to contact the WMU Office for Human Subjects Protection (OHSP) at (555) 000-0000.</p>\n\n<p>You may also contact the OHSP by email at humansubjects@wmu.edu.</p>\n\n<div id=\"gtx-trans\" style=\"position: absolute; left: 465px; top: 211.042px;\">\n<div class=\"gtx-trans-icon\">&nbsp;</div>\n</div>",
+        "DataExportTag": "Q1",
+        "QuestionID": "QID1718756050"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID8",
+      "SecondaryAttribute": "For each of these aspects of outreach, rate the level of support you are getting from your unit o...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12.0pt\"><span style=\"line-height:116%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">For each of these aspects of outreach, rate the <strong>level of support</strong> you are getting from your unit or department in WMU.</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q5",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "MobileFirst": true,
+          "NumColumns": 1,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF"
+        },
+        "QuestionDescription": "For each of these aspects of outreach, rate the level of support you are getting from your unit o...",
+        "Choices": {
+          "1": {
+            "Display": "Encouraging me to participate in outreach activities."
+          },
+          "2": {
+            "Display": "Putting me in contact with community partners."
+          },
+          "5": {
+            "Display": "Providing staff support for outreach programs."
+          },
+          "6": {
+            "Display": "Providing space for outreach activities."
+          },
+          "7": {
+            "Display": "Encouraging participation by WMU students in outreach activities."
+          },
+          "8": {
+            "Display": "Providing financial support for outreach activities."
+          },
+          "9": {
+            "Display": "Incentivizing participation in outreach activities."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          "9",
+          2,
+          5,
+          6,
+          8,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 4,
+        "Answers": {
+          "1": {
+            "Display": "They provide <strong>no </strong>support",
+            "ExclusiveAnswer": true
+          },
+          "2": {
+            "Display": "They provide <strong>partial </strong>support",
+            "ExclusiveAnswer": true
+          },
+          "3": {
+            "Display": "They <strong>fully</strong> support"
+          }
+        },
+        "AnswerOrder": [
+          1,
+          2,
+          3
+        ],
+        "ChoiceDataExportTags": false,
+        "QuestionID": "QID8",
+        "AnswerColumns": 3,
+        "ClarifyingSymbolType": "None",
+        "SubSelector": "SingleAnswer",
+        "DynamicChoicesData": []
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID7",
+      "SecondaryAttribute": "Have you applied for grants or foundation funding involving outreach in which (select all that ap...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\">Have you applied for grants or foundation funding involving outreach in which (select all that apply):</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q4",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Have you applied for grants or foundation funding involving outreach in which (select all that ap...",
+        "Choices": {
+          "1": {
+            "Display": "Outreach is required."
+          },
+          "2": {
+            "Display": "Outreach is encouraged."
+          },
+          "3": {
+            "Display": "Outreach is the main purpose of the grant."
+          },
+          "4": {
+            "Display": "None of the above."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID7"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID10",
+      "SecondaryAttribute": "How difficult do you find the following activities?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How difficult do you find the following activities?",
+        "DefaultChoices": false,
+        "DataExportTag": "Q7",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true,
+          "Autoscale": {
+            "XScale": {
+              "Name": "easyDifficult",
+              "Type": "likert",
+              "Reverse": false
+            }
+          }
+        },
+        "QuestionDescription": "How difficult do you find the following activities?",
+        "Choices": {
+          "1": {
+            "Display": "Adapting a presentation for a general audience."
+          },
+          "2": {
+            "Display": "Assembling the equipment or consumable resources needed for outreach activities."
+          },
+          "3": {
+            "Display": "Arranging programs in schools."
+          },
+          "4": {
+            "Display": "Arranging programs with community organizations."
+          },
+          "7": {
+            "Display": "Finding the time to participate in outreach."
+          },
+          "8": {
+            "Display": "Including my outreach in my evaluation and promotion materials."
+          },
+          "9": {
+            "Display": "Generating ideas for outreach activities."
+          },
+          "10": {
+            "Display": "Securing space/facilities for outreach activities."
+          },
+          "11": {
+            "Display": "Finding partners within WMU."
+          },
+          "12": {
+            "Display": "Finding partners outside of WMU."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          "10",
+          "11",
+          "12",
+          3,
+          4,
+          7,
+          "9",
+          8
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 13,
+        "NextAnswerId": 6,
+        "Answers": {
+          "1": {
+            "Display": "Extremely difficult"
+          },
+          "2": {
+            "Display": "Somewhat difficult"
+          },
+          "3": {
+            "Display": "Neither easy nor difficult"
+          },
+          "4": {
+            "Display": "Somewhat easy"
+          },
+          "5": {
+            "Display": "Extremely easy"
+          }
+        },
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "ChoiceDataExportTags": false,
+        "QuestionID": "QID10"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID48",
+      "SecondaryAttribute": "How do you engage in WMU-sponsored outreach activities? Select all that apply.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How do you engage in WMU-sponsored outreach activities? Select all that apply.",
+        "DefaultChoices": false,
+        "DataExportTag": "Q31",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How do you engage in WMU-sponsored outreach activities? Select all that apply.",
+        "Choices": {
+          "1": {
+            "Display": "I lead WMU outreach activities"
+          },
+          "2": {
+            "Display": "I secure funding for WMU outreach activities"
+          },
+          "3": {
+            "Display": "I participate in WMU outreach activities as a representative of WMU"
+          },
+          "4": {
+            "Display": "I participate in WMU outreach activities as a member of the community"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID48"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID32",
+      "SecondaryAttribute": "How do you engage in WMU-sponsored outreach activities? Select all that apply.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How do you engage in WMU-sponsored outreach activities? Select all that apply.",
+        "DataExportTag": "Q17",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How do you engage in WMU-sponsored outreach activities? Select all that apply.",
+        "Choices": {
+          "1": {
+            "Display": "I lead WMU outreach activities"
+          },
+          "2": {
+            "Display": "I secure funding for WMU outreach activities"
+          },
+          "3": {
+            "Display": "I participate in WMU outreach activities as a representative of WMU"
+          },
+          "4": {
+            "Display": "I participate in WMU outreach activities as a member of the community"
+          },
+          "5": {
+            "Display": "I do not participate in WMU outreach activities"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID32",
+        "DefaultChoices": false,
+        "GradingData": []
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID14",
+      "SecondaryAttribute": "How do you learn about planned WMU outreach activities? (Check all that apply.)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\">How do you learn about planned WMU outreach activities? (Check all that apply.)</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q11",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How do you learn about planned WMU outreach activities? (Check all that apply.)",
+        "Choices": {
+          "1": {
+            "Display": "From university colleagues."
+          },
+          "2": {
+            "Display": "From WMU web sites."
+          },
+          "3": {
+            "Display": "From radio, TV, newspapers."
+          },
+          "4": {
+            "Display": "From posters & signage in buildings."
+          },
+          "5": {
+            "Display": "From departmental and/or college internal communication channels."
+          },
+          "6": {
+            "Display": "From personal acquaintances."
+          },
+          "7": {
+            "Display": "Other sources (please list).",
+            "TextEntry": "true",
+            "TextEntryForceResponse": true
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionID": "QID14",
+        "SubSelector": "TX"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID34",
+      "SecondaryAttribute": "How does outreach fit into your job? Select all that apply.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How does outreach fit into your job? Select all that apply.",
+        "DataExportTag": "Q19",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How does outreach fit into your job? Select all that apply.",
+        "Choices": {
+          "1": {
+            "Display": "Outreach is not officially a part of my job."
+          },
+          "2": {
+            "Display": "Outreach is a part of my grants."
+          },
+          "3": {
+            "Display": "Outreach is a regular job duty."
+          },
+          "4": {
+            "Display": "Outreach is something I do for service."
+          },
+          "5": {
+            "Display": "Outreach is something I do as a volunteer."
+          },
+          "7": {
+            "Display": "Other (please specify)",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          "3",
+          "2",
+          "1",
+          "4",
+          "5",
+          "7"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionID": "QID34"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID12",
+      "SecondaryAttribute": "How important do you think each of the following activities are for your field of study?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12.0pt\"><span style=\"line-height:116%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">How important do you think each of the following activities are for your <u>field of study</u>?</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q9",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true,
+          "Autoscale": {
+            "XScale": {
+              "Name": "importance",
+              "Type": "likert",
+              "Reverse": false
+            }
+          }
+        },
+        "QuestionDescription": "How important do you think each of the following activities are for your field of study?",
+        "Choices": {
+          "1": {
+            "Display": "Making the public more aware of my field of study"
+          },
+          "2": {
+            "Display": "Making potential students more aware of my field of study"
+          },
+          "3": {
+            "Display": "Making the public aware of WMU activities in my field of study."
+          },
+          "4": {
+            "Display": "Making students more aware of the big questions in my field of study."
+          },
+          "5": {
+            "Display": "Understanding community issues relevant to my field of study."
+          },
+          "6": {
+            "Display": "Understanding issues relevant to recruiting future members of my field of study."
+          },
+          "7": {
+            "Display": "Giving back to the community."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 6,
+        "Answers": {
+          "1": {
+            "Display": "Not at all important"
+          },
+          "2": {
+            "Display": "Slightly important"
+          },
+          "3": {
+            "Display": "Moderately important"
+          },
+          "4": {
+            "Display": "Very important"
+          },
+          "5": {
+            "Display": "Extremely important"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "ChoiceDataExportTags": false,
+        "QuestionID": "QID12"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID11",
+      "SecondaryAttribute": "How important do you think the following activities are to the University?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12.0pt\"><span style=\"line-height:116%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">How important do you think the following activities are to&nbsp;<u>the University</u>?</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q8",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true,
+          "Autoscale": {
+            "XScale": {
+              "Name": "importance",
+              "Type": "likert",
+              "Reverse": false
+            }
+          }
+        },
+        "QuestionDescription": "How important do you think the following activities are to the University?",
+        "Choices": {
+          "1": {
+            "Display": "Researchers from the university visit schools."
+          },
+          "2": {
+            "Display": "Researchers from the university visit community groups."
+          },
+          "3": {
+            "Display": "K-12 students visit the university."
+          },
+          "4": {
+            "Display": "Parents are included in K-12 outreach activities."
+          },
+          "5": {
+            "Display": "Tenure track faculty are engaged in outreach activities."
+          },
+          "6": {
+            "Display": "Specialized faculty are engaged in outreach activities."
+          },
+          "7": {
+            "Display": "WMU undergraduates are engaged in outreach activities."
+          },
+          "8": {
+            "Display": "WMU graduate students are engaged in outreach activities."
+          },
+          "9": {
+            "Display": "K-12 teachers are engaged in outreach activities."
+          },
+          "10": {
+            "Display": "Community leaders are engaged in outreach activities."
+          },
+          "11": {
+            "Display": "Community partnerships are formed to support outreach activities."
+          },
+          "12": {
+            "Display": "Staff are engaged in outreach activities."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          "9",
+          "10",
+          "11",
+          5,
+          6,
+          "12",
+          7,
+          8
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 13,
+        "NextAnswerId": 6,
+        "Answers": {
+          "1": {
+            "Display": "Not at all important"
+          },
+          "2": {
+            "Display": "Slightly important"
+          },
+          "3": {
+            "Display": "Moderately important"
+          },
+          "4": {
+            "Display": "Very important"
+          },
+          "5": {
+            "Display": "Extremely important"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "ChoiceDataExportTags": false,
+        "QuestionID": "QID11"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID50",
+      "SecondaryAttribute": "How often do you engage in WMU outreach activities sponsored by other units?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12.0pt\"><span style=\"line-height:116%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">How often do you engage in WMU outreach activities sponsored by other units?</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q33",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "LabelPosition": "BELOW"
+        },
+        "QuestionDescription": "How often do you engage in WMU outreach activities sponsored by other units?",
+        "Choices": {
+          "1": {
+            "Display": "I don’t engage in outreach"
+          },
+          "2": {
+            "Display": "Once a year"
+          },
+          "3": {
+            "Display": "Once a semester"
+          },
+          "4": {
+            "Display": "Several times a semester"
+          },
+          "5": {
+            "Display": "Several times a month"
+          },
+          "7": {
+            "Display": "Less than once a year"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          "7",
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionID": "QID50"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID6",
+      "SecondaryAttribute": "How often do you participate in regularly scheduled outreach activities conducted by your unit?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\">How often do you participate in regularly scheduled outreach activities conducted by your unit?</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q3",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How often do you participate in regularly scheduled outreach activities conducted by your unit?",
+        "Choices": {
+          "1": {
+            "Display": "Does not apply."
+          },
+          "2": {
+            "Display": "I <strong>don&rsquo;t participate</strong> in regularly scheduled outreach activities."
+          },
+          "3": {
+            "Display": "I <strong>sometimes participate</strong> in regularly scheduled outreach activities."
+          },
+          "4": {
+            "Display": "I <strong>nearly always participate</strong> in regularly scheduled outreach activities"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID6"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID2",
+      "SecondaryAttribute": "How often do you represent WMU by engaging in outreach activities? Select the response that best...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12.0pt\"><span style=\"line-height:116%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">How often do you represent WMU by engaging in outreach activities? Select the response that best represents your typical level of engagement.</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q1",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "NumColumns": 2,
+          "LabelPosition": "BELOW"
+        },
+        "QuestionDescription": "How often do you represent WMU by engaging in outreach activities? Select the response that best...",
+        "Choices": {
+          "1": {
+            "Display": "I don’t engage in outreach"
+          },
+          "2": {
+            "Display": "Once a year"
+          },
+          "3": {
+            "Display": "Once a semester"
+          },
+          "4": {
+            "Display": "Several times a semester"
+          },
+          "5": {
+            "Display": "Several times a month"
+          },
+          "7": {
+            "Display": "Less than once a year"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          "7",
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionID": "QID2",
+        "SubSelector": "TX"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID13",
+      "SecondaryAttribute": "How well informed do you feel you are about the support available for WMU STEM outreach activitie...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12.0pt\"><span style=\"line-height:116%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">How well informed do you feel you are about the support available for WMU STEM outreach activities from each of the following entities?</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q10",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true,
+          "Autoscale": {
+            "XScale": {
+              "Name": "well",
+              "Type": "likert",
+              "Reverse": false
+            }
+          }
+        },
+        "QuestionDescription": "How well informed do you feel you are about the support available for WMU STEM outreach activitie...",
+        "Choices": {
+          "1": {
+            "Display": "from my program"
+          },
+          "2": {
+            "Display": "from other programs at WMU"
+          },
+          "3": {
+            "Display": "from other faculty"
+          },
+          "4": {
+            "Display": "from colleges"
+          },
+          "5": {
+            "Display": "from university leadership"
+          },
+          "6": {
+            "Display": "from funding agencies"
+          },
+          "7": {
+            "Display": "from within the community"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 6,
+        "Answers": {
+          "1": {
+            "Display": "Not informed at all"
+          },
+          "2": {
+            "Display": "Slightly informed"
+          },
+          "3": {
+            "Display": "Moderately informed"
+          },
+          "4": {
+            "Display": "Well informed"
+          },
+          "5": {
+            "Display": "Fully informed"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "ChoiceDataExportTags": false,
+        "QuestionID": "QID13"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID15",
+      "SecondaryAttribute": "If you are participating in WMU outreach, Which statement best describes your attitude toward par...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\"><strong>If you are participating in WMU outreach,</strong></span></span></span><br>\n<span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\">Which statement best describes your attitude toward participation in outreach?</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q11",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "If you are participating in WMU outreach, Which statement best describes your attitude toward par...",
+        "Choices": {
+          "1": {
+            "Display": "I’m doing outreach and I think it is an important part of my job."
+          },
+          "2": {
+            "Display": "I’m doing outreach because it is required for a grant."
+          },
+          "3": {
+            "Display": "I’m doing outreach, but I think it is taking too much time from other important responsibilities."
+          },
+          "4": {
+            "Display": "I’m doing outreach, but it doesn’t seem to be worth the effort."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID15"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID17",
+      "SecondaryAttribute": "Is there anything else you wish to tell us about your experience with outreach activities at WMU?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12.0pt\"><span style=\"line-height:116%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">Is there anything else you wish to tell us about your experience with outreach activities at WMU?</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q13",
+        "QuestionType": "TE",
+        "Selector": "ML",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Is there anything else you wish to tell us about your experience with outreach activities at WMU?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        },
+        "QuestionID": "QID17"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID33",
+      "SecondaryAttribute": "Is your participation in WMU outreach activities included in your Assignment of Responsibilities...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Is your participation in WMU outreach activities included in your Assignment of Responsibilities (AOR)?",
+        "DataExportTag": "Q18",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Is your participation in WMU outreach activities included in your Assignment of Responsibilities...",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          },
+          "3": {
+            "Display": "Not sure"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID33"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID9",
+      "SecondaryAttribute": "Please indicate your level of agreement with each of the following items.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\">Please indicate your level of agreement with each of the following items.</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q6",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true,
+          "Autoscale": {
+            "XScale": {
+              "Name": "importance",
+              "Type": "likert",
+              "Reverse": false
+            }
+          }
+        },
+        "QuestionDescription": "Please indicate your level of agreement with each of the following items.",
+        "Choices": {
+          "1": {
+            "Display": "Outreach is valued in my annual performance evaluation."
+          },
+          "2": {
+            "Display": "Outreach is valued in my promotion process."
+          },
+          "3": {
+            "Display": "Outreach is a personal goal for me."
+          },
+          "4": {
+            "Display": "Outreach is necessary for research funding."
+          },
+          "5": {
+            "Display": "Outreach is an organizational goal for my unit at WMU."
+          },
+          "6": {
+            "Display": "Outreach is an organizational goal for the university."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          4,
+          3,
+          5,
+          6
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 7,
+        "Answers": {
+          "1": {
+            "Display": "Not at all"
+          },
+          "6": {
+            "Display": "A little"
+          },
+          "2": {
+            "Display": "Slightly"
+          },
+          "3": {
+            "Display": "Moderately"
+          },
+          "4": {
+            "Display": "Very much"
+          }
+        },
+        "AnswerOrder": [
+          1,
+          "6",
+          2,
+          3,
+          4
+        ],
+        "ChoiceDataExportTags": false,
+        "QuestionID": "QID9",
+        "SubSelector": "SingleAnswer"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID39",
+      "SecondaryAttribute": "What best describes your position at WMU?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What best describes your position at WMU?",
+        "DefaultChoices": false,
+        "DataExportTag": "Q24",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What best describes your position at WMU?",
+        "Choices": {
+          "1": {
+            "Display": "Tenured faculty member"
+          },
+          "2": {
+            "Display": "Tenure-track faculty member"
+          },
+          "3": {
+            "Display": "Specialized faculty"
+          },
+          "4": {
+            "Display": "Other (please indicate)",
+            "TextEntry": "true"
+          },
+          "5": {
+            "Display": "Administrator"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "4"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID39"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID35",
+      "SecondaryAttribute": "What do you believe are the key strengths of WMU's current outreach activities? Please provide sp...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What do you believe are the <b>key strengths of WMU's current outreach activities</b>? Please provide specific examples.",
+        "DefaultChoices": false,
+        "DataExportTag": "Q20",
+        "QuestionType": "TE",
+        "Selector": "ESTB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What do you believe are the key strengths of WMU's current outreach activities? Please provide sp...",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        },
+        "QuestionID": "QID35"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID36",
+      "SecondaryAttribute": "What do you believe are the main weaknesses or areas for improvement in WMU's outreach activities...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What do you believe are the <b>main weaknesses or areas for improvement</b> in WMU's outreach activities? How do you think these could be addressed?",
+        "DefaultChoices": false,
+        "DataExportTag": "Q21",
+        "QuestionID": "QID36",
+        "QuestionType": "TE",
+        "Selector": "ESTB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What do you believe are the main weaknesses or areas for improvement in WMU's outreach activities...",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID37",
+      "SecondaryAttribute": "What opportunities do you see for enhancing WMU's outreach activities? Are there any new initiati...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What <b>opportunities</b> do you see for <b>enhancing WMU's outreach activities</b>? Are there any new initiatives, collaborations, resources, or infrastructure you would suggest?",
+        "DefaultChoices": false,
+        "DataExportTag": "Q22",
+        "QuestionID": "QID37",
+        "QuestionType": "TE",
+        "Selector": "ESTB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What opportunities do you see for enhancing WMU's outreach activities? Are there any new initiati...",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID38",
+      "SecondaryAttribute": "What potential threats or challenges do you foresee that could impact the effectiveness of WMU's...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What potential threats or <b>challenges</b> do you foresee that could <b>impact the effectiveness </b>of WMU's outreach activities? How might we mitigate these risks?",
+        "DefaultChoices": false,
+        "DataExportTag": "Q23",
+        "QuestionID": "QID38",
+        "QuestionType": "TE",
+        "Selector": "ESTB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What potential threats or challenges do you foresee that could impact the effectiveness of WMU's...",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID46",
+      "SecondaryAttribute": "What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\">What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q29",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)",
+        "Choices": {
+          "1": {
+            "Display": "I don’t know how to get involved."
+          },
+          "2": {
+            "Display": "I don’t have enough time to do it properly."
+          },
+          "3": {
+            "Display": "I don’t believe it provides enough return on my investment."
+          },
+          "4": {
+            "Display": "I’m not interested in doing outreach."
+          },
+          "6": {
+            "Display": "It does not count on my AOR."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          "6",
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 1,
+        "QuestionID": "QID46"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID47",
+      "SecondaryAttribute": "What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)",
+        "DefaultChoices": false,
+        "DataExportTag": "Q30",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)",
+        "Choices": {
+          "1": {
+            "Display": "I don't know how to get involved."
+          },
+          "2": {
+            "Display": "I don't have enough time to do it properly."
+          },
+          "3": {
+            "Display": "I don't believe it provides enough return on my investment."
+          },
+          "4": {
+            "Display": "lIt does not count on my AOR."
+          },
+          "5": {
+            "Display": "I'm not interested in doing outreach."
+          },
+          "6": {
+            "Display": "Others (Please specify)",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 1,
+        "QuestionID": "QID47"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID16",
+      "SecondaryAttribute": "What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\">What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)</span></span></span>",
+        "DefaultChoices": false,
+        "DataExportTag": "Q12",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What reasons would lead you to NOT participate in outreach at WMU? (select all that apply)",
+        "Choices": {
+          "1": {
+            "Display": "I don’t know how to get involved."
+          },
+          "2": {
+            "Display": "I don’t have enough time to do it properly."
+          },
+          "3": {
+            "Display": "I don’t believe it provides enough return on my investment."
+          },
+          "4": {
+            "Display": "I’m not interested in doing outreach."
+          },
+          "6": {
+            "Display": "It does not count on my AOR."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          "6",
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 1,
+        "QuestionID": "QID16"
+      }
+    },
+    {
+      "SurveyID": "SV_000000000000",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID42",
+      "SecondaryAttribute": "Where do you report outreach activities on your annual report? Select all that apply.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Where do you report outreach activities on your annual report? Select all that apply.",
+        "DataExportTag": "Q25",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Where do you report outreach activities on your annual report? Select all that apply.",
+        "Choices": {
+          "1": {
+            "Display": "Teaching"
+          },
+          "2": {
+            "Display": "Research"
+          },
+          "3": {
+            "Display": "Service"
+          },
+          "4": {
+            "Display": "I don't report it"
+          },
+          "5": {
+            "Display": "Other (please specify)",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID42"
+      }
+    }
+  ]
+}
